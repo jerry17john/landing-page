@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CarService</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#book-now">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsZZeaazsDOrv-mpM5RsfpC8eOaO2et1BgpUTDwtcNs5iEySxsBidG3U&s=10" alt="Hero Image">
+        <div class="hero-text">
+            <h2>Your Trusted Car Service Partner</h2>
+            <a href="#services" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Car Service, we are dedicated to providing top-quality car service that keeps you on the road with peace of mind. With years of experience in the industry, our team of certified technicians is committed to delivering exceptional service, whether it’s routine maintenance or urgent repairs.
+
+            We understand that your car is essential to your daily life, and our goal is to ensure it runs smoothly and efficiently. We pride ourselves on our transparency, reliability, and customer-first approach. When you choose us, you're not just getting a service provider – you're gaining a trusted partner in vehicle care.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-columns">
+            <div class="service">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1A5n37qiOJfcJi4ROvTPrJTB0_hQZJ0S7yVIQbgqfgNIzcxwsjzo4Tg&s=10" alt="Service 1">
+                <h3>Oil Change</h3>
+                <button onclick="openPopup('Service 1')">More Info</button>
+            </div>
+            <div class="service">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqDqeKz8Vj6Hs-KL4bk_v4yUF8hM8Uv8XeSw&usqp=CAU" alt="Service 2">
+                <h3>Tire Replacement</h3>
+                <button onclick="openPopup('Service 2')">More Info</button>
+            </div>
+            <div class="service">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoGVXgF8_A4J71fS77KpVt9TKOLUXJyHkjg&usqp=CAU" alt="Service 3">
+                <h3>Engine Repair</h3>
+                <button onclick="openPopup('Service 3')">More Info</button>
+            </div>
+            <div class="service">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkaE5jBiRZXnc42qByUoAyvcbQeSqb9Hu4jFLjCVsePT6IO0MpTuamJVO&s=10" alt="Service 4">
+                <h3>Car Detailing</h3>
+                <button onclick="openPopup('Service 4')">More Info</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="book-now" class="book-now">
+        <h2>Book Your Service</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Service Details:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CarService. All rights reserved.</p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-description">More detailed information about the service will go here.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
